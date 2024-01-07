@@ -1,4 +1,4 @@
-
+@charset "UTF-8";
 /* Llamado "*" todo el docuemnto HTML
 
 Llamado de ATRIBUTOS
@@ -6,32 +6,28 @@ Llamado de ATRIBUTOS
        CLASS -> .
        ETIUQETAS/SELECTOR -> Por su nombre
 */
-
 /* Letra para todo el doc HTML*/
-
-@import url('https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600&display=swap');
-
-*{
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Smooch Sans', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Smooch+Sans:wght@100;200;300;400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0%;
+  box-sizing: border-box;
+  font-family: "Smooch Sans", sans-serif;
 }
-body {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #f0f0f0; 
-  }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
 
 /*ESTILOS DEL header*/
-
-.header{
+.header {
   backdrop-filter: blur(5px);
   position: sticky;
   top: 0;
@@ -39,240 +35,228 @@ body {
 }
 
 .navbar {
-    background-color: rgba(160, 205, 92, 0.712) !important;
+  background-color: rgba(160, 205, 92, 0.712) !important;
+}
 
-  }
-  
+.navbar-nav .nav-item .nav-link {
+  font-size: large;
+  color: #3d3d3d !important;
+  text-decoration: none;
+  transition: color 0.3s;
+}
 
-  .navbar-nav .nav-item .nav-link {
-    font-size: large; 
-    color: #3d3d3d !important;
-    text-decoration: none;
-    transition: color 0.3s; 
-  }
-  
- 
-  .navbar-nav .nav-item .nav-link:hover {
-    color: #4caf50;
-    transform: translateY(-3px);
-    font-weight: bold; 
-  }
+.navbar-nav .nav-item .nav-link:hover {
+  color: #4caf50;
+  transform: translateY(-3px);
+  font-weight: bold;
+}
 
-  .navbar-nav .nav-item .nav-link:active {
-    color: #1b5e20;
-    transform: translateY(1px); 
-  }
-  
-  .navbar-nav .nav-item .nav-link:visited {
-    color: #00695c;
-  }
-  
-  .navbar-nav .nav-item .nav-link:focus {
-    outline: none;
-    
-  }
+.navbar-nav .nav-item .nav-link:active {
+  color: #1b5e20;
+  transform: translateY(1px);
+}
+
+.navbar-nav .nav-item .nav-link:visited {
+  color: #00695c;
+}
+
+.navbar-nav .nav-item .nav-link:focus {
+  outline: none;
+}
 
 /*ESTILOS DEL MAIN*/
-
-
-  
 #main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-  }
-  
-  /* Estilos para la sección de contenido */
-  .contenido {
-    text-align: center;
-  }
-  
-  /* Estilos para el box-content */
-  .box-content {
-    width: 50%;
-  }
-  
-  /* Estilos para el texto */
-  .texto {
-    margin-bottom: 20px;
-  }
-  
-  .tit1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  .subtit {
-    font-size: 1.5em;
-  }
-  
-  /* Estilos para los iconos */
-  .iconos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items:center;
-    margin-top: 10px;
-  }
-  
-  .iconos img {
-    width: 40px;
-    height: auto;
-    object-fit: cover;
-    margin: 40px;;
-  }
-  
-  /* Estilos para la boximg */
-  .boximg {
-    width: 50%;
-    margin-top: 20px;
-  }
-  
-  .imgFoto img {
-    width: 300px; 
-    height: 400px; 
-    object-fit: cover;
-    display: block;
-    margin: 0 auto; 
-  }
-  
-  
-  .icono {
-    width: 100%;
-    
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
 
- /* Estilos para el footer */
+/* Estilos para la sección de contenido */
+.contenido {
+  text-align: center;
+}
+
+/* Estilos para el box-content */
+.box-content {
+  width: 50%;
+}
+
+/* Estilos para el texto */
+.texto {
+  margin-bottom: 20px;
+}
+
+.tit1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.subtit {
+  font-size: 1.5em;
+}
+
+/* Estilos para los iconos */
+.iconos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.iconos img {
+  width: 40px;
+  height: auto;
+  object-fit: cover;
+  margin: 40px;
+}
+
+/* Estilos para la boximg */
+.boximg {
+  width: 50%;
+  margin-top: 20px;
+}
+
+.imgFoto img {
+  width: 300px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: 0 auto;
+}
+
+.icono {
+  width: 100%;
+}
+
+/* Estilos para el footer */
 .footer {
-    backdrop-filter: blur(5px);
-    position: sticky;
-    z-index: 100;
-    width: 100%;
-  }
-  
-  .footer .container-fluid {
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none; 
-  color: inherit; 
-  cursor: pointer; 
+  backdrop-filter: blur(5px);
+  position: sticky;
+  z-index: 100;
+  width: 100%;
+}
+
+.footer .container-fluid {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
   display: inline-block;
-  }
-  
-  .footer .navbar-toggler {
-    border: none;
-    background-color: transparent;
-  }
-  
-  .footer .icon {
-    font-size: 1.5em;
-  }
-  
-  /* Estilos para el enlace en el footer */
-  .footer .nav-link {
-    margin-right: 20px;
-    transition: color 0.3s; 
-  }
-  
-  /* Pseudoclases */
-  .footer .nav-link:hover {
-    color: #090909 !important;
-    font-weight: bold; 
-  }
-  
-  .footer .nav-link:active {
-    color: #111111 ; 
-  }
-  
-  /* Estilos adicionales para el enlace activo si es necesario */
-  .footer .nav-item.active .nav-link {
-    font-weight: bold !important;
-    color: #0b0b0b !important; /* Color activo */
-  }
+}
 
+.footer .navbar-toggler {
+  border: none;
+  background-color: transparent;
+}
 
+.footer .icon {
+  font-size: 1.5em;
+}
 
+/* Estilos para el enlace en el footer */
+.footer .nav-link {
+  margin-right: 20px;
+  transition: color 0.3s;
+}
 
- /*HOJA CONTACTO*/
- 
- h1 {
-    color: #2d2d2d;
-    justify-content: center;
-    text-align: center;
+/* Pseudoclases */
+.footer .nav-link:hover {
+  color: #090909 !important;
+  font-weight: bold;
+}
 
+.footer .nav-link:active {
+  color: #111111;
+}
+
+/* Estilos adicionales para el enlace activo si es necesario */
+.footer .nav-item.active .nav-link {
+  font-weight: bold !important;
+  color: #0b0b0b !important; /* Color activo */
+}
+
+/*HOJA CONTACTO*/
+h1 {
+  color: #2d2d2d;
+  justify-content: center;
+  text-align: center;
 }
 
 form {
-    display: flex;
-    flex-direction: column;
-    width: 80vh;
-    margin: 20px;
-    padding: 20px;
-    box-sizing: border-box;
-    border: 1px solid #ccc;
-    border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  width: 80vh;
+  margin: 20px;
+  padding: 20px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 8px;
 }
 
 label {
-    margin-bottom: 8px;
-    font-weight: bold;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 
 input,
 textarea {
-    padding: 8px;
-    margin-bottom: 16px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
+  padding: 8px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
 button {
-    background-color: #64c067;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #64c067;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 button:hover {
-    background-color: #37883b;
+  background-color: #37883b;
 }
 
 #remover {
-    background-color: #e57373;
-    color: #fff;
-    padding: 10px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  background-color: #e57373;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 #remover:hover {
-    background-color: #d32f2f;
+  background-color: #d32f2f;
 }
 
 .mensaje {
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 4px;
-    color: #fff;
-    font-weight: bold;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .mensaje.exito {
-    background-color: #4caf50;
+  background-color: #4caf50;
 }
 
 .mensaje.error {
-    background-color: #f44336;
+  background-color: #f44336;
 }
 
-.TextContFin{
-    font-family: 'Smooch Sans', sans-serif;
+.TextContFin {
+  font-family: "Smooch Sans", sans-serif;
 }
+
+/*# sourceMappingURL=style.css.map */

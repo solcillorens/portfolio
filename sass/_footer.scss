@@ -1,0 +1,218 @@
+/* Estilos para el footer (VIEJO CON CSS)
+.footer {
+    backdrop-filter: blur(5px);
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+  }
+  
+  .footer .container-fluid {
+    display: flex;
+    justify-content: flex-end;
+    text-decoration: none; 
+  color: inherit; 
+  cursor: pointer; 
+  display: inline-block;
+  }
+  
+  .footer .navbar-toggler {
+    border: none;
+    background-color: transparent;
+  }
+  
+  .footer .icon {
+    font-size: 1.5em;
+  }
+  
+  /* Estilos para el enlace en el footer 
+  .footer .nav-link {
+    margin-right: 20px;
+    transition: color 0.3s; 
+  }
+  
+  /* Pseudoclases 
+  .footer .nav-link:hover {
+    color: #090909 !important;
+    font-weight: bold; 
+  }
+  
+  .footer .nav-link:active {
+    color: #111111 ; 
+  }
+  
+  /* Estilos adicionales para el enlace activo si es necesario 
+  .footer .nav-item.active .nav-link {
+    font-weight: bold !important;
+    color: #0b0b0b !important; /* Color activo 
+  }
+  */
+
+  .footer {
+    backdrop-filter: blur(5px);
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+  
+    .container-fluid {
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      display: inline-block;
+  
+      .navbar-toggler {
+        border: none;
+        background-color: transparent;
+      }
+  
+      .icon {
+        font-size: 1.5em;
+      }
+  
+      .nav-link {
+        margin-right: 20px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #090909 !important;
+          font-weight: bold;
+        }
+  
+        &:active {
+          color: #111111;
+        }
+      }
+  
+      .nav-item.active .nav-link {
+        font-weight: bold !important;
+        color: #0b0b0b !important;
+      }
+  
+      // Estilos para el formulario
+      form {
+        display: flex;
+        flex-direction: column;
+        width: 80vh;
+        margin: 20px;
+        padding: 20px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        transition: transform 0.3s;
+  
+        &:hover {
+          transform: translateY(-5px);
+        }
+  
+        label {
+          margin-bottom: 8px;
+          font-weight: bold;
+        }
+  
+        input,
+        textarea {
+          padding: 8px;
+          margin-bottom: 16px;
+          border: 1px solid #ccc;
+          border-radius: 4px;
+          box-sizing: border-box;
+        }
+  
+        button {
+          background-color: #64c067;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #37883b;
+          }
+        }
+  
+        #remover {
+          background-color: #e57373;
+          color: #fff;
+          padding: 10px;
+          border: none;
+          border-radius: 4px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+  
+          &:hover {
+            background-color: #d32f2f;
+          }
+        }
+  
+        .mensaje {
+          margin-top: 10px;
+          padding: 10px;
+          border-radius: 4px;
+          color: #fff;
+          font-weight: bold;
+  
+          &.exito {
+            background-color: #4caf50;
+          }
+  
+          &.error {
+            background-color: #f44336;
+          }
+        }
+      }
+    }
+  }
+
+  /*.footer {
+    backdrop-filter: blur(5px);
+    position: sticky;
+    z-index: 100;
+    width: 100%;
+  
+    // Estilos para .container-fluid dentro del footer
+    .container-fluid {
+      display: flex;
+      justify-content: flex-end;
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+      display: inline-block;
+  
+      // Estilos para .navbar-toggler dentro de .container-fluid
+      .navbar-toggler {
+        border: none;
+        background-color: transparent;
+      }
+  
+      // Estilos para el icono dentro de .container-fluid
+      .icon {
+        font-size: 1.5em;
+      }
+  
+      // Estilos para .nav-link dentro del footer
+      .nav-link {
+        margin-right: 20px;
+        transition: color 0.3s;
+  
+        // Pseudoclases
+        &:hover {
+          color: #090909 !important;
+          font-weight: bold;
+        }
+  
+        &:active {
+          color: #111111;
+        }
+      }
+  
+      // Estilos adicionales para .nav-item.active si es necesario
+      .nav-item.active .nav-link {
+        font-weight: bold !important;
+        color: #0b0b0b !important; /* Color activo 
+      }
+    }
+  }
+  
