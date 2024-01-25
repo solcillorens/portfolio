@@ -1,57 +1,10 @@
-/* Estilos para el footer (VIEJO CON CSS)
 .footer {
     backdrop-filter: blur(5px);
-    position: sticky;
     z-index: 100;
     width: 100%;
-  }
-  
-  .footer .container-fluid {
-    display: flex;
-    justify-content: flex-end;
-    text-decoration: none; 
-  color: inherit; 
-  cursor: pointer; 
-  display: inline-block;
-  }
-  
-  .footer .navbar-toggler {
-    border: none;
-    background-color: transparent;
-  }
-  
-  .footer .icon {
-    font-size: 1.5em;
-  }
-  
-  /* Estilos para el enlace en el footer 
-  .footer .nav-link {
-    margin-right: 20px;
-    transition: color 0.3s; 
-  }
-  
-  /* Pseudoclases 
-  .footer .nav-link:hover {
-    color: #090909 !important;
-    font-weight: bold; 
-  }
-  
-  .footer .nav-link:active {
-    color: #111111 ; 
-  }
-  
-  /* Estilos adicionales para el enlace activo si es necesario 
-  .footer .nav-item.active .nav-link {
-    font-weight: bold !important;
-    color: #0b0b0b !important; /* Color activo 
-  }
-  */
-
-  .footer {
-    backdrop-filter: blur(5px);
-    position: sticky;
-    z-index: 100;
-    width: 100%;
+    bottom: 0;
+    height: max-content;
+    background-color: $primary-color;
   
     .container-fluid {
       display: flex;
@@ -71,7 +24,6 @@
       }
   
       .nav-link {
-        margin-right: 20px;
         transition: color 0.3s;
   
         &:hover {
@@ -166,53 +118,43 @@
     }
   }
 
-  /*.footer {
-    backdrop-filter: blur(5px);
-    position: sticky;
-    z-index: 100;
-    width: 100%;
-  
-    // Estilos para .container-fluid dentro del footer
-    .container-fluid {
+// Variables de colores
+$primary-color: rgba(160, 205, 92, 0.712);
+$text-color: #3d3d3d;
+$hover-color: #4caf50;
+$active-color: #1b5e20;
+$visited-color: #00695c;
+$background-color: #f0f0f0;
+
+// Estilos del footer
+.footer {
+  background-color: $primary-color;
+  padding: 20px 0;
+
+  .container-fluid {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+
+    .navbar-nav {
       display: flex;
-      justify-content: flex-end;
-      text-decoration: none;
-      color: inherit;
-      cursor: pointer;
-      display: inline-block;
-  
-      // Estilos para .navbar-toggler dentro de .container-fluid
-      .navbar-toggler {
-        border: none;
-        background-color: transparent;
-      }
-  
-      // Estilos para el icono dentro de .container-fluid
-      .icon {
-        font-size: 1.5em;
-      }
-  
-      // Estilos para .nav-link dentro del footer
-      .nav-link {
-        margin-right: 20px;
-        transition: color 0.3s;
-  
-        // Pseudoclases
-        &:hover {
-          color: #090909 !important;
-          font-weight: bold;
+      align-items: center;
+
+      .nav-item {
+        .nav-link {
+          font-size: 24px;
+          color: $text-color;
+          margin: 0 10px;
+
+          &:hover {
+            color: $hover-color;
+          }
+
+          &:last-child { 
+            margin-right: 0; 
+          }
         }
-  
-        &:active {
-          color: #111111;
-        }
-      }
-  
-      // Estilos adicionales para .nav-item.active si es necesario
-      .nav-item.active .nav-link {
-        font-weight: bold !important;
-        color: #0b0b0b !important; /* Color activo 
       }
     }
   }
-  
+}

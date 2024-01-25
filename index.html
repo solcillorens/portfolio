@@ -3,14 +3,23 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
   
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-8CmV4x9U4qU7dpxJ6VQdSKVH5z5Tji2Yz3v9ZHklH2z8q79XDNp5E/i/yJYPN4a" crossorigin="anonymous"> <!-- Font Awesome para los íconos -->
 
   <link rel="stylesheet" href="CSS/style.css"> <!-- Archivo de estilos personalizado SIEMPRE AL FINAL-->
 
   <title>Sol Eugenia Llorens</title>
+
+  
+ <!-- Animaciones
+  <h1 class="animate__animated animate__bounce">An animated element</h1>
+  -->
 
 </head>
 <body >
@@ -50,27 +59,40 @@
     <section class="contenido d-flex flex-wrap justify-content-center">
       <section class="box-content d-flex flex-column w-50">
         <section class="texto text-center mb-4">
-          <h1 class="tit1">SOL EUGENIA LLORENS</h1>
-          <p class="subtit">Ingeniera Industrial</p>
-          <p class="descripcion">Apasionada por el análisis de datos y el desarrollo Frontend.</p>
+          <h1 class="tit1"data-aos="fade-up-right" data-aos-delay="300">SOL EUGENIA LLORENS</h1>
+          <p class="subtit"data-aos="fade-up-right"data-aos-delay="300">Ingeniera Industrial</p>
+          <p class="descripcion"data-aos="fade-up-right"data-aos-delay="300">Apasionada por el análisis de datos y el desarrollo Frontend.</p>
         </section>
   
         <section class="iconos d-flex flex-wrap justify-content-center align-items-center mt-2">
-          <img src="iconos/archivo-excel.png" alt="">
-          <img src="iconos/powerpoint.png" alt="">
-          <img src="iconos/palabra.png" alt="">
-          <img src="iconos/icons8-power-bi-50.png" alt="">
-          <img src="iconos/html-5.png" alt="">
-          <img src="iconos/css-3.png" alt="">
+          <img src="iconos/archivo-excel.png" alt="" data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+          <img src="iconos/powerpoint.png" alt=""data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+          <img src="iconos/palabra.png" alt=""data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+          <img src="iconos/icons8-power-bi-50.png" alt=""data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+          <img src="iconos/html-5.png" alt=""data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
+          <img src="iconos/css-3.png" alt=""data-aos="flip-left"
+     data-aos-easing="ease-out-cubic"
+     data-aos-duration="1000">
         </section>
       </section>
   
-      <section class="boximg w-50 justify-content-center">
+      <section class="boximg w-50 justify-content-center" data-aos="fade-left">
         <article class="imgFoto box">
-          <img src="image/fotopersonal-inicio.jpg" alt="">
+          <img src="image/fotopersonal-inicio.jpg" alt="" data-aos="fade-zoom-in"
+          data-aos-easing="ease-in-back"
+          data-aos-delay="500"
+          data-aos-offset="0">
         </article>
-      </section>
-    </section>
   
     <section class="icono w-100">
       <!-- Contenido de la clase .icono -->
@@ -78,24 +100,55 @@
   </main>
 
 
-  <footer class="footer navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarFooter" aria-controls="navbarFooter" aria-expanded="false" aria-label="Toggle navigation">
-            <i class="icon fas fa-arrow-right"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarFooter">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="pag" href="pages/historia.html">Siguiente Página</a>
-                </li>
-            </ul>
-        </div>
+  <footer class="footer navbar navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid ">
+      <div class="collapse navbar-collapse" id="navbarFooter">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.facebook.com/solcillorens" target="_blank" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/solcillorens" target="_blank" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.instagram.com/solcillorens" target="_blank" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+              <i class="fab fa-instagram"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/sol-eugenia-llorens-7a7628201" target="_blank" data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0">
+              <i class="fab fa-linkedin"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
 </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 
 </body>
 

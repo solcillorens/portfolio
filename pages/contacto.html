@@ -3,17 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-8CmV4x9U4qU7dpxJ6VQdSKVH5z5Tji2Yz3v9ZHklH2z8q79XDNp5E/i/yJYPN4a" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-... tu clave de integridad ..." crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-8CmV4x9U4qU7dpxJ6VQdSKVH5z5Tji2Yz3v9ZHklH2z8q79XDNp5E/i/yJYPN4a" crossorigin="anonymous"> <!-- Font Awesome para los íconos -->
+    
     <link rel="stylesheet" href="../CSS/style.css"> <!--SIEMPRE AL FINAL-->
 
     <title>Sol Eugenia Llorens</title>
 </head>
-<body>
+<body id="body">
 
     <header class="header w-100">
         <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -47,41 +52,64 @@
         </nav>
     </header>
     
-    <main>
+    <main id="main">
 
-        <h1>CONTACTO</h1>
         
-        <form action="#" method="post">
-            <label for="nombre">Nombre y Apellido:</label>
-            <input type="text" id="nombre" name="nombre" required>
-        
-            <label for="mail">Mail:</label>
-            <input type="email" id="mail" name="mail" required>
-        
-            <label for="consulta">Consulta:</label>
-            <textarea id="consulta" name="consulta" rows="4" required></textarea>
-        
-            <button type="submit">Enviar Consulta</button>
-            <button type="button" id="remover" onclick="limpiarFormulario()">Remover</button>
-        </form>
+        <div class="container">
+    <form action="#" method="post" class="mi-formulario">
+      <h2 class="mb-4">CONSULTAS</h2>
 
-        <h1 class="TextContFin"> Gracias por su consulta</h1>
+      <div class="form-group">
+        <label for="nombre">Nombre y Apellido:</label>
+        <input type="text" id="nombre" name="nombre" class="form-control" required>
+      </div>
 
-    
+      <div class="form-group">
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" name="mail" class="form-control" required>
+      </div>
+
+      <div class="form-group">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" class="form-control" rows="4" required></textarea>
+      </div>
+
+      <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+    </form>
+  </div>
+
+
     </main>
 
     <footer class="footer navbar navbar-expand-lg navbar-light bg-light">
+
+        <div class="container-fluid ">
+            <div class="collapse navbar-collapse" id="navbarFooter">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.facebook.com/solcillorens" target="_blank">
+                    <i class="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://github.com/solcillorens" target="_blank">
+                    <i class="fab fa-github"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.instagram.com/solcillorens" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.linkedin.com/in/sol-eugenia-llorens-7a7628201" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         
-     <section class="volver-inicio">
-        <button class="volver-inicio__boton" onclick="volverAlInicio()">
-        </button>
-            <i class="fas fa-house"></i>
-            <ul>
-                <li>
-                    <a class="volverinicio" href="../index.html"></a>
-                </li>         
-            </ul>
-        </section>
         
 
     </footer>
